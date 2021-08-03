@@ -1,8 +1,7 @@
-class example:
-    def methodA(self):
-        self.methodB()
+class C:
+    a: float
+    b: float
+    c: float = field(init=False)
 
-    def methodB(self):
-        ext_obj = obj1.func1()
-        obj = ext_obj.func2().func3()
-        print("End")
+    def __post_init__(self):
+        self.c = self.a + self.b
