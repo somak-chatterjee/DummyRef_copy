@@ -1,3 +1,3 @@
 class example_class:
-    def methodB(self, par2):
+    def methodB(self):
         print(0)
